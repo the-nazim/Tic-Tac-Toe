@@ -1,3 +1,8 @@
+/*
+    Tic Tac Toe Game
+    Credits: Muhammed Nzim
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
