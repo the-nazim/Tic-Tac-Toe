@@ -1,6 +1,9 @@
 /*
     Tic Tac Toe Game
-    Credits: Muhammed Nzim
+    Credits: Muhammed Nazim
+    This is a simple implementation of the Tic Tac Toe game in C++.
+    Players take turns to place their marks (X or O) on a 3x3 grid.
+    The game continues until one player wins or all spaces are filled.
 */
 
 #include <bits/stdc++.h>
@@ -61,6 +64,17 @@ int main()
             cout<<"      |         |         \n";
             cout<<"   " << space[2][0] <<"  |    " << space[2][1] << "    |    " << space[2][2] << "\n";
             cout<<"      |         |         \n";
+
+            for(int i=0; i<3; i++)
+            {
+                if((space[i][0] == 'X' && space[i][1] == 'X' && space[i][2] == 'X')||
+                   (space[0][i] == 'X' && space[1][i] == 'X' && space[2][i] == 'X'))
+                {
+                    cout<<"Player 1 wins!\n";
+                    return 0;
+                }
+            }
+
         }
         else
         {
@@ -87,6 +101,16 @@ int main()
             cout<<"      |         |         \n";
             cout<<"   " << space[2][0] <<"  |    " << space[2][1] << "    |    " << space[2][2] << "\n";
             cout<<"      |         |         \n";
+
+            for(int i=0; i<3; i++)
+            {
+                if((space[i][0] == 'X' && space[i][1] == 'X' && space[i][2] == 'X')||
+                   (space[0][i] == 'X' && space[1][i] == 'X' && space[2][i] == 'X'))
+                {
+                    cout<<"Player 2 wins!\n";
+                    return 0;
+                }
+            }
         }
     }
     
